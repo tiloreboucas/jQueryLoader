@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>jQuery Loader</title>
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.loader.js"></script>
+	<style type="text/css">
+		.sample { padding: 50px; }
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Start / Stop Loader</legend>
+			<p><code><pre>&lt;div id="div_teste"&gt;Conteudo&lt;/div&gt;</pre></code></p>
+			<p><code><pre>$('#div_teste').loader();</pre></code></p>
+			<p><code><pre>$('#div_teste').loader('end');</pre></code></p>
+			<div class="sample">
+				<div id="div_teste">Conteudo</div>
+			</div>
+			<button type="button" id="bt_teste">Carregar</button>
+			<button type="button" id="bt_teste_end">Concluido</button>
+	</fieldset>	
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#bt_teste').click(function(){
+			$('#div_teste').loader();
+			return false;
+		});
+		
+		$('#bt_teste_end').click(function(){
+			$('#div_teste').loader('end');
+			return false;
+		});
+	});
+</script>
+</html>
