@@ -43,21 +43,21 @@
             };
             
 			this.attr.targetAttr = {
-                width: $(this.attr.target).css('width'),
-                height: $(this.attr.target).css('height'),
-				marginLeft: $(this.attr.target).css('margin-left'),
-				marginRight: $(this.attr.target).css('margin-right'),
-				marginTop: $(this.attr.target).css('margin-top'),
-				marginBottom: $(this.attr.target).css('margin-bottom'),
-				float: $(this.attr.target).css('float'),
-				verticalAlign: $(this.attr.target).css('vertical-align'),
-				textAlign: $(this.attr.target).css('text-align'),
-				display: $(this.attr.target).css('display'),
-				position: $(this.attr.target).css('position'),
-				left: $(this.attr.target).css('left'),
-				top: $(this.attr.target).css('top'),
-				right: $(this.attr.target).css('right'),
-				bottom: $(this.attr.target).css('bottom')
+                'width': $(this.attr.target).css('width'),
+                'height': $(this.attr.target).css('height'),
+				'marginLeft': $(this.attr.target).css('margin-left'),
+				'marginRight': $(this.attr.target).css('margin-right'),
+				'marginTop': $(this.attr.target).css('margin-top'),
+				'marginBottom': $(this.attr.target).css('margin-bottom'),
+				'float': $(this.attr.target).css('float'),
+				'verticalAlign': $(this.attr.target).css('vertical-align'),
+				'textAlign': $(this.attr.target).css('text-align'),
+				'display': $(this.attr.target).css('display'),
+				'position': $(this.attr.target).css('position'),
+				'left': $(this.attr.target).css('left'),
+				'top': $(this.attr.target).css('top'),
+				'right': $(this.attr.target).css('right'),
+				'bottom': $(this.attr.target).css('bottom')
             };
 			
 			(this.attr.container).css({
