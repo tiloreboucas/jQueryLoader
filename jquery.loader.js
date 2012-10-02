@@ -1,7 +1,7 @@
 ﻿(function ($) {
     var attr = {
-        target: '',
-        imgLoader: '<img ' + 'src="data:image/gif;base64,R0lGODlhEAAQAPMPALu7u5mZmTMzM93d3REREQAAAHd3' +
+        'target': '',
+        'imgLoader': '<img ' + 'src="data:image/gif;base64,R0lGODlhEAAQAPMPALu7u5mZmTMzM93d3REREQAAAHd3' +
                     'd1VVVWZmZqqqqoiIiO7u7kRERCIiIgARAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFBwAPACwAAAAAE' +
                     'AAQAEAEcPDJtyg6dUrFetDTIopMoSyFcxxD1krD8AwCkASDIlPaUDQLR6G1Cy0SgqIkE1IQGMrFAKCcGWSBzw' +
                     'PAnAwarcKQ15MpTMJYd1ZyUDXSDGelBY0qIoBh/ZoYGgELCjoxCRRvIQcGD1kzgSAgAACQDxEAIfkEBQcADwAsAAA' +
@@ -23,9 +23,9 @@
                     'USSdKDV89gDAwcFBIBgywMRnkWBgcJUDKSZRIKAPQcGwYByAAYTEEJAAJIGbATEQ+B4ExmK9CDhBd8ThdHw/AmUYEQAh+QQFBwAP' +
                     'ACwAAAEADwAPAAAEXvBJQIa8+ILSspdHkXxS9wxF4Q3L2aTBeC0sFjhAtuyLIjAMhYc2GBgaSKGuyNoBDp7czFAgeBIKwC6kWCAMx' +
                     'USAFjtNCAAFGGF5tCQLAaJnWCTqHoREvQuQJAkyGBEAOw==" alt="img Loader"' + ' />',
-        imgCtx: '',
-		targetAttr: null,
-		container: null
+        'imgCtx': '',
+		'targetAttr': null,
+		'container': null
     }
     var methods = {
         init: function () {
@@ -38,8 +38,8 @@
 			this.attr.container = $(this.attr.imgCtx).parent();
 			
 			var imgCtxSize = {
-                width: $(this.attr.imgCtx).width(),
-                height: $(this.attr.imgCtx).height()
+                'width': $(this.attr.imgCtx).width(),
+                'height': $(this.attr.imgCtx).height()
             };
             
 			this.attr.targetAttr = {
