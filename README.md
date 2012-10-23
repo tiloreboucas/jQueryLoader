@@ -15,12 +15,12 @@ Clone o repositório, `git clone git://github.com/tilowr/jQueryLoader.git`, ou [
 Exemplo
 ---------
 
-Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jqueryloader/sample.jqueryloader.html 
+Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jQueryLoader/jquery.loader.html
 
 
 Documentação
 --------------
-Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jqueryloader/doc.jqueryloader.html 
+Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jQueryLoader/jquery.loader.html 
 
 
 Versionamento
