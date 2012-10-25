@@ -14,25 +14,91 @@
 <body>
 	<fieldset>
 		<legend>Start / Stop Loader</legend>
-			<p><code><pre>&lt;div id="div_teste"&gt;Conteudo&lt;/div&gt;</pre></code></p>
-			<p><code><pre>$('#div_teste').loader();</pre></code></p>
-			<p><code><pre>$('#div_teste').loader('end');</pre></code></p>
-			<div class="sample">
-				<div id="div_teste">Conteudo</div>
+			<p><code><pre>&lt;div id="div_teste0"&gt;Conteudo&lt;/div&gt;</pre></code></p>
+			<p><code><pre>$('#div_teste0').loader();</pre></code></p>
+			<p><code><pre>$('#div_teste0').loader('end');</pre></code></p>
+			<div class="sample0">
+				<div id="div_teste0">Conteudo</div>
 			</div>
-			<button type="button" id="bt_teste">Carregar</button>
-			<button type="button" id="bt_teste_end">Concluido</button>
+			<button type="button" id="bt_teste0">Carregar</button>
+			<button type="button" id="bt_teste_end0">Concluido</button>
+	</fieldset>	
+
+	<fieldset>
+		<legend>Start white / Stop Loader</legend>
+			<p><code><pre>&lt;div id="div_teste1"&gt;Conteudo&lt;/div&gt;</pre></code></p>
+			<p><code><pre>$('#div_teste1').loader({color: 'white'});</pre></code></p>
+			<p><code><pre>$('#div_teste1').loader('end');</pre></code></p>
+			<div class="sample1">
+				<div id="div_teste1">Conteudo</div>
+			</div>
+			<button type="button" id="bt_teste1">Carregar</button>
+			<button type="button" id="bt_teste_end1">Concluido</button>
+	</fieldset>	
+
+	<fieldset>
+		<legend>Start Black / Stop Loader</legend>
+			<p><code><pre>&lt;div id="div_teste2"&gt;Conteudo&lt;/div&gt;</pre></code></p>
+			<p><code><pre>$('#div_teste2').loader({color: 'black'});</pre></code></p>
+			<p><code><pre>$('#div_teste2').loader('end');</pre></code></p>
+			<div class="sample2">
+				<div id="div_teste2">Conteudo</div>
+			</div>
+			<button type="button" id="bt_teste2">Carregar</button>
+			<button type="button" id="bt_teste_end2">Concluido</button>
+	</fieldset>	
+
+	<fieldset>
+		<legend>Start URL IMG / Stop Loader</legend>
+			<p><code><pre>&lt;div id="div_teste3"&gt;Conteudo&lt;/div&gt;</pre></code></p>
+			<p><code><pre>$('#div_teste3').loader({imgUrl: 'http://www.ferrostaal.com/typo3conf/ext/edit_contactform/res/template/preloader.gif'});</pre></code></p>
+			<p><code><pre>$('#div_teste3').loader('end');</pre></code></p>
+			<div class="sample3">
+				<div id="div_teste3">Conteudo</div>
+			</div>
+			<button type="button" id="bt_teste3">Carregar</button>
+			<button type="button" id="bt_teste_end3">Concluido</button>
 	</fieldset>	
 </body>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#bt_teste').click(function(){
-			$('#div_teste').loader();
+		$('#bt_teste0').click(function(){
+			$('#div_teste0').loader();
 			return false;
 		});
 		
-		$('#bt_teste_end').click(function(){
-			$('#div_teste').loader('end');
+		$('#bt_teste_end0').click(function(){
+			$('#div_teste0').loader('end');
+			return false;
+		});
+
+		$('#bt_teste1').click(function(){
+			$('#div_teste1').loader({color: 'white'});
+			return false;
+		});
+		
+		$('#bt_teste_end1').click(function(){
+			$('#div_teste1').loader('end');
+			return false;
+		});
+
+		$('#bt_teste2').click(function(){
+			$('#div_teste2').loader({color: 'black'});
+			return false;
+		});
+		
+		$('#bt_teste_end2').click(function(){
+			$('#div_teste2').loader('end');
+			return false;
+		});
+
+		$('#bt_teste3').click(function(){
+			$('#div_teste3').loader({imgUrl: 'http://www.ferrostaal.com/typo3conf/ext/edit_contactform/res/template/preloader.gif'});
+			return false;
+		});
+		
+		$('#bt_teste_end3').click(function(){
+			$('#div_teste3').loader('end');
 			return false;
 		});
 	});

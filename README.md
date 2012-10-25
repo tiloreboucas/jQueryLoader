@@ -12,15 +12,9 @@ Início Rápido
 Clone o repositório, `git clone git://github.com/tilowr/jQueryLoader.git`, ou [baixe a última versão](https://github.com/tilowr/jQueryLoader/zipball/master).
 
 
-Exemplo
----------
-
-Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jQueryLoader/jquery.loader.html
-
-
 Documentação
 --------------
-Para ver um exemplo funcionando visite: http://tilowr.com.br/github/jQueryLoader/jquery.loader.html 
+http://tilowr.com.br/github/#jQueryLoader
 
 
 Versionamento
