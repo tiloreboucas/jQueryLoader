@@ -98,9 +98,18 @@
     			
     			$(this.attr.imgCtx).wrap('<div class="loader_container" />');
 
-                $(this.attr.imgCtx).width('16px');
+                //$(this.attr.imgCtx).width('16px');
                 
     			this.attr.container = $(this.attr.imgCtx).parent();
+
+                this.attr.container.append('<div class="loader_column" />');
+
+                this.attr.container.find('.loader_column').css({
+                    'height': '100%',
+                    'width': '1px',
+                    'display': 'inline-block',
+                    'vertical-align': 'middle'
+                });
     			
     			var imgCtxSize = {
                     'width': $(this.attr.imgCtx).width(),
@@ -134,7 +143,7 @@
     				'margin-bottom': this.attr.targetAttr.marginBottom,
     				'float': this.attr.targetAttr.float,
     				'vertical-align': this.attr.targetAttr.verticalAlign,
-    				'text-align': this.attr.targetAttr.textAlign,
+    				'text-align': 'center',
     				'display': this.attr.targetAttr.display,
     				'position': this.attr.targetAttr.position,
     				'left': this.attr.targetAttr.left,
